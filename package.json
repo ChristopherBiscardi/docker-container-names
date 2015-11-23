@@ -1,6 +1,6 @@
 {
   "name": "docker-container-names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Name generation translated from the docker engine into JS",
   "main": "index.js",
   "scripts": {
