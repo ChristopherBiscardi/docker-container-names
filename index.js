@@ -1,7 +1,7 @@
 'use strict';
-const sample = require('lodash/collection/sample');
+var sample = require('lodash/collection/sample');
 
-const left = [
+var left = [
   "admiring",
   "adoring",
   "agitated",
@@ -480,7 +480,7 @@ const right = [
 // formatted as "adjective_surname". For example 'focused_turing'. If retry is non-zero, a random
 // integer between 0 and 10 will be added to the end of the name, e.g `focused_turing3`
 module.exports = function getRandomName(retry) {
-  let name = `${sample(left)}_${sample(right)}`;
+  let name = sample(left) + '_' + sample(right);
   if(name === "boring_wozniak") {
     /* Steve Wozniak is not boring */
     name = getRandomName();
@@ -488,7 +488,7 @@ module.exports = function getRandomName(retry) {
 
   if(retry && retry > 0) {
     // Using sample since we already have it and it makes the code clear
-    name = `${name}${sample([1,2,3,4,5,6,7,8,9,10])}`;
+    name = name + sample([1,2,3,4,5,6,7,8,9,10]);
   }
   return name
 }
