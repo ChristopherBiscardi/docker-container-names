@@ -69,7 +69,7 @@ var left = [
 
 // Docker, starting from 0.7.x, generates names from notable scientists and hackers.
 // Please, for any amazing man that you add to the list, consider adding an equally amazing woman to it, and vice versa.
-const right = [
+var right = [
   // Muhammad ibn Jābir al-Ḥarrānī al-Battānī was a founding father of astronomy. https://en.wikipedia.org/wiki/Mu%E1%B8%A5ammad_ibn_J%C4%81bir_al-%E1%B8%A4arr%C4%81n%C4%AB_al-Batt%C4%81n%C4%AB
   "albattani",
 
